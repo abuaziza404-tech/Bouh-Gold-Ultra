@@ -1,0 +1,65 @@
+[
+  {
+    "id": "T001",
+    "name_ar": "جبيت — محور العروق الرئيسي",
+    "belt": "Gebeit-Sinkat",
+    "lat": 20.88,
+    "lon": 36.06,
+    "type": "Orogenic Lode",
+    "notes": "Shear + Quartz + Iron cluster"
+  },
+  {
+    "id": "T002",
+    "name_ar": "سنكات — عقدة تقاطع قص",
+    "belt": "Gebeit-Sinkat",
+    "lat": 20.74,
+    "lon": 36.18,
+    "type": "Shear Intersection",
+    "notes": "Fracture density + alteration"
+  },
+  {
+    "id": "T003",
+    "name_ar": "هشاي — قبعة جوسان",
+    "belt": "Hashai",
+    "lat": 19.18,
+    "lon": 36.07,
+    "type": "Gossan Gold",
+    "notes": "Iron cap + oxide target"
+  },
+  {
+    "id": "T004",
+    "name_ar": "أرياب — امتداد كبريتيدي",
+    "belt": "Ariab-Amur",
+    "lat": 18.76,
+    "lon": 35.36,
+    "type": "Sulfide Gold",
+    "notes": "Deep sulfide edge"
+  },
+  {
+    "id": "T005",
+    "name_ar": "دربيكوان — مصيدة وادي",
+    "belt": "Derbeikwan",
+    "lat": 18.72,
+    "lon": 34.95,
+    "type": "Placer / Wadi Trap",
+    "notes": "Drainage trap"
+  },
+  {
+    "id": "T006",
+    "name_ar": "Target 1 المرجعي",
+    "belt": "Red Sea Hills",
+    "lat": 20.78,
+    "lon": 36.45,
+    "type": "Shear + Quartz Reference",
+    "notes": "BOUH reference target"
+  },
+  {
+    "id": "T007",
+    "name_ar": "أربعات — مصيدة وادي/تماس",
+    "belt": "Arbaat",
+    "lat": 19.046,
+    "lon": 37.324,
+    "type": "Wadi / Contact Trap",
+    "notes": "Arbaat AOI"
+  }
+]

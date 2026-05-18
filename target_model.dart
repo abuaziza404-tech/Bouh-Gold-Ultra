@@ -1,0 +1,2 @@
+class TargetModel { final String id,nameAr,belt,type,notes; final double lat,lon; const TargetModel({required this.id,required this.nameAr,required this.belt,required this.lat,required this.lon,required this.type,required this.notes});
+  factory TargetModel.fromJson(Map<String,dynamic> j)=>TargetModel(id:j['id'].toString(),nameAr:j['name_ar'].toString(),belt:j['belt'].toString(),lat:(j['lat'] as num).toDouble(),lon:(j['lon'] as num).toDouble(),type:j['type'].toString(),notes:j['notes'].toString()); }

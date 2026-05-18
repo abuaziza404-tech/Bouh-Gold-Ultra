@@ -1,0 +1,2 @@
+import '../domain/models/grid_cell.dart';
+class TargetBEngine { static double pScore(GridCell c)=>double.parse(((0.35*c.structureScore)+(0.25*c.claySwirIndex)+(0.20*c.ironIndex)+(0.20*c.quartzSilicaIndex)).toStringAsFixed(3)); static double ipi(GridCell c){ final a=(c.claySwirIndex+c.ironIndex+c.quartzSilicaIndex+c.alterationIndex)/4; return double.parse((100*((0.35*c.structureScore)+(0.30*a)+(0.20*c.patternScore)+(0.15*c.fieldEvidenceScore))).toStringAsFixed(1)); }}

@@ -1,0 +1,33 @@
+{
+  "system_identity": "BOUH GOLD PRO ULTRA v12.0",
+  "developer": "Ahmed Abuaziza Al-Rasheedi",
+  "kill_rules": [
+    {
+      "id": "KILL_001",
+      "field": "structureScore",
+      "operator": "<=",
+      "value": 0.2,
+      "decision": "REJECT",
+      "severity": "fatal",
+      "message_ar": "رفض فوري: غياب النمط التركيبي والبنيوي."
+    },
+    {
+      "id": "KILL_002",
+      "field": "patternScore",
+      "operator": "<=",
+      "value": 0.2,
+      "decision": "REJECT",
+      "severity": "fatal",
+      "message_ar": "رفض: غياب النمط المكاني أو التجمع."
+    },
+    {
+      "id": "HOLD_001",
+      "field": "claySwirScore",
+      "operator": "<=",
+      "value": 0.3,
+      "decision": "HOLD",
+      "severity": "hold",
+      "message_ar": "تعليق: ضعف Clay/SWIR."
+    }
+  ]
+}

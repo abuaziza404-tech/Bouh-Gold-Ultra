@@ -1,0 +1,6 @@
+{
+  "rules": [
+    "Magnetic >0.75 => Severe/Difficult, High Yield, Sensitivity 8-11",
+    "Magnetic <0.45 + Quartz high => Normal, General/Deep, Sensitivity 12-16"
+  ]
+}

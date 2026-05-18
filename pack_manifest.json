@@ -1,0 +1,22 @@
+{
+  "pack_id": "red_sea_hills_master_pack",
+  "pack_name_ar": "حزمة تلال البحر الأحمر الرئيسية",
+  "developer": "Ahmed Abuaziza Al-Rasheedi",
+  "coverage": {
+    "country": "Sudan",
+    "region": "Red Sea Hills",
+    "min_lat": 18.0,
+    "max_lat": 24.5,
+    "min_lon": 30.0,
+    "max_lon": 40.5
+  },
+  "included_belts": [
+    "Gebeit-Sinkat",
+    "Ariab-Amur",
+    "Hashai",
+    "Arbaat",
+    "Derbeikwan",
+    "Onib",
+    "Hamisana"
+  ]
+}

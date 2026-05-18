@@ -1,0 +1,8 @@
+{
+  "sentinel2": {
+    "iron": "B4/B2",
+    "quartz": "B11/B12",
+    "alteration": "(B11+B12)/B8",
+    "ndmi": "(B8-B11)/(B8+B11)"
+  }
+}

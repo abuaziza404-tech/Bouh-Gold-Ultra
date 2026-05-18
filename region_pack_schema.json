@@ -1,0 +1,11 @@
+{
+  "schema_name": "BOUH Region Pack Schema",
+  "schema_version": "12.0",
+  "developer": "Ahmed Abuaziza Al-Rasheedi",
+  "guardrails": [
+    "No Structure = Reject",
+    "No Pattern = Reject",
+    "No Clay/SWIR = HOLD",
+    "FeOx alone = Reject"
+  ]
+}
