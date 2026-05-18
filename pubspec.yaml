@@ -1,0 +1,23 @@
+name: bouh_gold_pro_ultra
+description: BOUH GOLD PRO ULTRA v12.0 Arabic geological exploration intelligence app.
+publish_to: "none"
+version: 12.0.0+12
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  url_launcher: ^6.3.0
+  shared_preferences: ^2.3.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/packs/red_sea_hills/
+    - assets/rules/
