@@ -1,0 +1,65 @@
+name: Build BOUH APK From Uploaded ZIP
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Find source ZIP
+        run: |
+          ls -la
+          test -f BOUH_EXPO_FIELD_COMMANDER_V12_5_SOURCE.zip
+
+      - name: Unzip BOUH source
+        run: |
+          rm -rf bouh_build
+          mkdir bouh_build
+          unzip -q BOUH_EXPO_FIELD_COMMANDER_V12_5_SOURCE.zip -d bouh_build
+          ls -la bouh_build
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install dependencies
+        working-directory: bouh_build
+        run: npm install
+
+      - name: Prebuild Android
+        working-directory: bouh_build
+        run: npx expo prebuild --platform android --clean --non-interactive
+
+      - name: Build release APK
+        working-directory: bouh_build/android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --stacktrace
+
+      - name: Collect APK
+        run: |
+          mkdir -p output
+          cp bouh_build/android/app/build/outputs/apk/release/*.apk output/BOUH-GOLD-PRO-ULTRA-V12-5.apk
+          ls -lah output
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BOUH-GOLD-PRO-ULTRA-V12-5-APK
+          path: output/BOUH-GOLD-PRO-ULTRA-V12-5.apk
