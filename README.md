@@ -1,17 +1,50 @@
-# BOUH GOLD PRO ULTRA v12.0 — بوح التضاريس
+# 🛰️ BOUH RADAR GPS PRO v25
 
-تطبيق Flutter/Android استكشافي تحليلي ميداني عربي بالكامل، مبني على Region Packs ومحركات BOUH SUPREME وليس مجرد قائمة نقاط.
+تطبيق رادار ذهب احترافي متكامل بـ GPS والتحليل الجيولوجي الذكي
 
-المطور: Ahmed Abuaziza Al-Rasheedi — أحمد أبوعزيزه الرشيدي
+## ✨ المميزات الرئيسية
 
-## البناء
+✅ **نظام رادار ديناميكي** يعرض الأهداف بشكل حقيقي
+✅ **تحليل جيولوجي متقدم** بـ AI BOUH SUPREME  
+✅ **بيانات حقيقية** من منطقة البحر الأحمر السوداني
+✅ **نظام تصنيف ذكي** للأهداف حسب الأولوية
+✅ **واجهة احترافية** Dark Theme مع Gold Accents
+
+## 📊 مؤشرات التحليل
+
+- 🔴 مؤشر الحديد (Iron Index)
+- 🔴 مؤشر Clay/SWIR (الطين والأشعة تحت الحمراء)
+- 🔴 مؤشر الكوارتز (Quartz-Silica)
+- 🔴 قبعة جوسان (Gossan Proxy)
+- 🔴 درجة البنية (Structure Score)
+- 🔴 احتمالية الضجيج (Noise Probability)
+
+## 🎯 التصنيفات
+
+| الدرجة | التصنيف | الاحتمالية |
+|--------|---------|----------|
+| 🔴 90+ | Target-B Elite | ممتاز جداً |
+| 🟠 80-89 | High Priority | مرشح قوي |
+| 🟡 60-79 | Standard | عادي |
+| 🟢 <60 | Low Priority | منخفض |
+
+## 🚀 البدء
+
 ```bash
 flutter pub get
+flutter run
+```
+
+## 📦 البناء
+
+```bash
 flutter build apk --release
 ```
 
-الناتج:
-`build/app/outputs/flutter-apk/app-release.apk`
+## 👨‍💻 المطور
 
-## ملاحظة علمية
-التحليل احتمالي مبني على حزمة بيانات مدمجة من مشروع بوح. القرار الاقتصادي النهائي يحتاج Field Validation + Assay + QA/QC.
+أحمد أبوعزيزة الرشيدي (Ahmed Abuaziza Al-Rasheedi)
+
+## 📄 الإصدار
+
+Version 25.0.0 - June 2026
